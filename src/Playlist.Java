@@ -16,6 +16,13 @@ public interface Playlist extends PlaylistKernel {
      * @updates this
      * @ensures order of playlist != order of #playlist
      */
-    void shuffe();
+    void shuffle();
+
+    /**
+     * Returns a (pseudo)random song, and not just the first every time.
+     * @updates this
+     * @ensures playlist consists of all previous songs except returned song
+     */
+    String randomSong();
 
 }

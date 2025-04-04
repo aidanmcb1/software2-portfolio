@@ -14,14 +14,19 @@ public interface PlaylistKernel {
     void addSong(String song);
 
     /**
-     * Remove a song to the end of the playlist.
+     * Removes the song at the front of the queue.
      *
-     * @param song
-     *            the song to be removed
      * @requires song is in this
      * @updates this
      * @ensures this = #this - song
      * @return the removed song
      */
-    String removeSong(String song);
+    String removeFront();
+
+    /**
+     * Returns how many songs are in playlist.
+     *
+     * @return length of playlist
+     */
+    int length();
 }
