@@ -8,15 +8,8 @@ import components.queue.Queue2;
  */
 public abstract class PlaylistSecondary implements Playlist {
 
-    /**
-     * Returns if song is in playlist.
-     *
-     * @param song
-     *            song to check for
-     * @return if song is in playlist
-     */
     @Override
-    public boolean containsSong(String song) {
+    public final boolean containsSong(String song) {
         boolean result = false;
         for (int i = 0; i < this.length(); i++) {
             String temp = this.removeFront();
@@ -29,15 +22,8 @@ public abstract class PlaylistSecondary implements Playlist {
         return result;
     }
 
-    /**
-     * Returns a (pseudo)random song, and not just the first every time.
-     *
-     * @updates this
-     * @ensures playlist consists of all previous songs except returned song
-     * @return the removed song
-     */
     @Override
-    public String randomSong() {
+    public final String randomSong() {
         Random random = new Random();
         int songSelection = random.nextInt(this.length());
         for (int i = 0; i <= songSelection; i++) {
@@ -46,14 +32,8 @@ public abstract class PlaylistSecondary implements Playlist {
         return this.removeFront();
     }
 
-    /**
-     * Shuffles the playlist.
-     *
-     * @updates this
-     * @ensures order of playlist != order of #playlist
-     */
     @Override
-    public void shuffle() {
+    public final void shuffle() {
         Queue<String> temp = new Queue2<String>();
         for (int i = 0; i < this.length(); i++) {
             temp.enqueue(this.randomSong());
@@ -61,5 +41,51 @@ public abstract class PlaylistSecondary implements Playlist {
         for (int i = 0; i < temp.length(); i++) {
             this.addSong(temp.dequeue());
         }
+    }
+
+    @Override
+    public final String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Playlist conatins: \\n");
+        for (int i = 0; i < this.length(); i++) {
+            String temp = this.removeFront();
+            sb.append(temp);
+            sb.append(", \\n");
+            this.addSong(temp);
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public final boolean equals(Object obj) {
+        boolean equals = true;
+        if (!(obj instanceof Playlist)) {
+            equals = false;
+        } else {
+            Playlist compared = (Playlist) obj;
+            for (int i = 0; i < this.length(); i++) {
+                String song1 = this.removeFront();
+                String song2 = compared.removeFront();
+                if (song1.compareTo(song2) != 0) {
+                    equals = false;
+                }
+                this.addSong(song1);
+                compared.addSong(song2);
+            }
+        }
+        return equals;
+    }
+
+    @Override
+    public final int hashCode() {
+        int count = 0;
+
+        for (int i = 0; i < this.length(); i++) {
+            String temp = this.removeFront();
+            count += temp.length();
+            this.addSong(temp);
+        }
+
+        return count;
     }
 }

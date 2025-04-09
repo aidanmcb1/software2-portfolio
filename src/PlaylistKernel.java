@@ -1,7 +1,9 @@
+import components.standard.Standard;
+
 /**
  * Playlist Primary Methods.
  */
-public interface PlaylistKernel {
+public interface PlaylistKernel extends Standard<Playlist> {
 
     /**
      * Add a song to the end of the playlist.
