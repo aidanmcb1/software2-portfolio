@@ -61,11 +61,11 @@ public abstract class PlaylistSecondary implements Playlist {
     @Override
     public final String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Playlist conatins: \\n");
+        sb.append("Playlist conatins: ");
         for (int i = 0; i < this.length(); i++) {
             String temp = this.removeFront();
             sb.append(temp);
-            sb.append(", \\n");
+            sb.append(", ");
             this.addSong(temp);
         }
         return sb.toString();
