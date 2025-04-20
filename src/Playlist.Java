@@ -13,6 +13,18 @@ public interface Playlist extends PlaylistKernel {
     boolean containsSong(String song);
 
     /**
+     * Remove specified song from playlist.
+     *
+     * @param name
+     *            name of song to be removed
+     * @return the song removed
+     * @updates this
+     * @requires name to be in playlist
+     * @ensures #playlist = Splaylist + return
+     */
+    String removeSong(String name);
+
+    /**
      * Shuffles the playlist.
      *
      * @updates this

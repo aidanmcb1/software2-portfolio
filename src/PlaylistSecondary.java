@@ -23,6 +23,21 @@ public abstract class PlaylistSecondary implements Playlist {
     }
 
     @Override
+    public final String removeSong(String name) {
+        String answer = "";
+        for (int i = 0; i < this.length(); i++) {
+            String current = this.removeFront();
+            if (current.compareTo(name) == 0 && answer.compareTo("") == 0) {
+                answer = current;
+            } else {
+                this.addSong(current);
+            }
+
+        }
+        return answer;
+    }
+
+    @Override
     public final String randomSong() {
         Random random = new Random();
         int songSelection = random.nextInt(this.length());
