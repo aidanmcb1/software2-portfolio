@@ -1,5 +1,6 @@
 import components.map.Map;
 import components.map.Map.Pair;
+import components.map.Map1L;
 
 /**
  * First use case. A music library.
@@ -10,6 +11,20 @@ public class MusicLibrary {
      * Data Structure.
      */
     private Map<String, Playlist> library;
+
+    /**
+     * Initial representation.
+     */
+    private void createNewRep() {
+        this.library = new Map1L<String, Playlist>();
+    }
+
+    /**
+     * Constructor.
+     */
+    public MusicLibrary() {
+        this.createNewRep();
+    }
 
     /**
      * Creates a new playlist.
