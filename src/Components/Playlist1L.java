@@ -1,3 +1,5 @@
+package Components;
+
 import components.queue.Queue2;
 
 /**

@@ -3,6 +3,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import Components.Playlist;
+import Components.Playlist1L;
+
 /**
  * Test file for kernel.
  */

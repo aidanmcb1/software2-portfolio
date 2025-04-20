@@ -1,3 +1,5 @@
+package Components;
+
 import java.util.Random;
 
 import components.queue.Queue;

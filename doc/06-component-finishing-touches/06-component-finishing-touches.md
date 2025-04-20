@@ -307,18 +307,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think I understand developement very well now. Making the component from scratch taught me classes and inheritance better than class (sorry jeremy).
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I had a very basic understanding of class inheritance before this class, and the lectures helped a little, but I find that getting a real example in front of me is the best way to learn. The portfolio made me learn it myself and I now feel very confident in my abilities.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+The project has made me appreciate the osu discipline a bit more. Having rigid contracts is a little nice when implementing. I still enjoy programming, the urge to solve logic puzzles is strong.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +326,31 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I learned that you can mass rename variables and methods in vscode without having to retype every single occurence of them. Not much, but it saved a lot of time. I also learned how to properly break down assignments that are open ended. With an assignment that has infinite possibilities like this, learning how to properly plan out my work so I dont get analysis paralysis made me much more effective.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Planning
+Time management
+Refactoring (lol)
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I have always loved coding, it feels pretty natural to me and solving a problem after a long period of time feels great. Im not a huge fan of being graded on it but whatever.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I will continue to learn new technologies (Im going to learn docker and maybe kubernetes in the summer) and refine my skills. I will also redo my study strategies and time management cause im kind of a mess on that front right now.
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
+<!-- : update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -383,7 +385,7 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
+<!-- : read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -435,6 +437,6 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
+<!-- : follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9

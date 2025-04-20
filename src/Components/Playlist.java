@@ -1,3 +1,5 @@
+package Components;
+
 /**
  * Playlist enhanced with secondary methods.
  */
