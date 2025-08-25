@@ -31,7 +31,8 @@
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "c:\\Users\\aidan\\Desktop\\software2-portfolio\\lib\\components.jar",
+        "test-lib\\**\\*.jar"
     ],
     "java.saveActions.cleanup": true,
     "java.cleanup.actions": [
